@@ -1,0 +1,20 @@
+<h3>Bianca Godo</h3>
+<button (click)="obterEscolaridade()" >Buscar escolaridades</button>
+
+<hr/>
+<table border="1">
+  <tr>
+    <td>id</td>
+    <td>descricao</td>
+    <td>curso</td>
+    <td>escola</td>
+    <td>status</td>
+  </tr>
+  <tr *ngFor="let escolaridade of escolaridades">
+    <td>{{escolaridade.id}}</td>
+    <td>{{escolaridade.descricao}}</td>
+    <td>{{escolaridade.curso}}</td>
+    <td>{{escolaridade.escola}}</td>
+    <td>{{escolaridade.status}}</td>
+  </tr>
+</table>
